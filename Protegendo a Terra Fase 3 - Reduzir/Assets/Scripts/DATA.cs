@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DATA : MonoBehaviour {
-    public GameObject[] Datas;
+    private GameObject[] Datas;
     public static int PersonagemAInstanciar;
 
     private void Awake()
