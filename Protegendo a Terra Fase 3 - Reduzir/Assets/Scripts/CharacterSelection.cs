@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class CharacterSelection : MonoBehaviour
         if (characterList[0])
         {
             characterList[0].SetActive(true);
+            characterList[selecaoAtual].gameObject.tag = "ativo";
         }
     }
     public void NextPlayer()
@@ -31,14 +33,21 @@ public class CharacterSelection : MonoBehaviour
         if (selecaoAtual >= 0 && selecaoAtual < 5)
         {
             characterList[selecaoAtual].SetActive(false);
+            characterList[selecaoAtual].gameObject.tag = "des";
             selecaoAtual = selecaoAtual + 1;
             characterList[selecaoAtual].SetActive(true);
+            characterList[selecaoAtual].gameObject.tag = "ativo";
         }
-        if (selecaoAtual == 5)
+        else
         {
-            characterList[selecaoAtual].SetActive(false);
-            selecaoAtual = 0;
-            characterList[selecaoAtual].SetActive(true);
+            if (selecaoAtual == 5)
+            {
+                characterList[selecaoAtual].SetActive(false);
+                characterList[selecaoAtual].gameObject.tag = "des";
+                selecaoAtual = 0;
+                characterList[selecaoAtual].SetActive(true);
+                characterList[selecaoAtual].gameObject.tag = "ativo";
+            }
         }
     }
     public void BackPlayer()
@@ -46,14 +55,28 @@ public class CharacterSelection : MonoBehaviour
         if (selecaoAtual == 0)
         {
             characterList[selecaoAtual].SetActive(false);
+            characterList[selecaoAtual].gameObject.tag = "des";
             selecaoAtual = 5;
             characterList[selecaoAtual].SetActive(true);
+            characterList[selecaoAtual].gameObject.tag = "ativo";
         }
-        if (selecaoAtual > 0 && selecaoAtual <= 5)
+        else
         {
-            characterList[selecaoAtual].SetActive(false);
-            selecaoAtual = selecaoAtual - 1;
-            characterList[selecaoAtual].SetActive(true);
+            if (selecaoAtual > 0 && selecaoAtual <= 5)
+            {
+                characterList[selecaoAtual].SetActive(false);
+                characterList[selecaoAtual].gameObject.tag = "des";
+                selecaoAtual = selecaoAtual - 1;
+                characterList[selecaoAtual].SetActive(true);
+                characterList[selecaoAtual].gameObject.tag = "ativo";
+            }
         }
+    }
+    public void PlayerSelect()
+    {
+        GameObject.FindGameObjectsWithTag("ativo");
+        DontDestroyOnLoad(transform.gameObject);
+        characterList[selecaoAtual].gameObject.name = "player";
+        SceneManager.LoadScene("Game");
     }
 }

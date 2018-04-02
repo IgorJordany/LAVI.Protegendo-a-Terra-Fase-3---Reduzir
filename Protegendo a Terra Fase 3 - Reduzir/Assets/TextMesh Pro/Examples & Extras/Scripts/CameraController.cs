@@ -11,7 +11,6 @@ namespace TMPro.Examples
 
         private Transform cameraTransform;
         private Transform dummyTarget;
-
         public Transform CameraTarget;
 
         public float FollowDistance = 30.0f;
@@ -68,6 +67,9 @@ namespace TMPro.Examples
         // Use this for initialization
         void Start()
         {
+            CameraTarget = GameObject.Find("player").transform;
+
+
             if (CameraTarget == null)
             {
                 // If we don't have a target (assigned by the player, create a dummy in the center of the scene).

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Movimentacao : MonoBehaviour
 {
 
-    public float VelocidadeDeMovimento = 3;
-    public float VelocidadeDeRotacao = 120;
+    private float VelocidadeDeMovimento = 10;
+    private float VelocidadeDeRotacao = 120;
 
     // Update is called once per frame
     void Update()

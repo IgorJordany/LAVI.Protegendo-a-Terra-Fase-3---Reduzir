@@ -18,9 +18,5 @@ public class DATA : MonoBehaviour {
     }
     private void Update()
     {
-        if (Input.GetKeyDown("e"))
-        {
-            SceneManager.LoadScene("Game");
-        }
     }
 }
