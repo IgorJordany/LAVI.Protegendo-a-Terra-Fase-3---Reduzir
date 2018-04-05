@@ -96,6 +96,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 76015de5fcb247eeb8df66c001d5a22d Assembly-CSharp.dll:TMPro.Examples.TMP_UiFrameRateCounter
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CameraController
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -217,6 +218,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 1cd4893b18ef6c9e1612214d23ea08a3 Assembly-CSharp.dll:.ChatController
+dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.PlayerController
 48a9dee325686d1924a2646b71c83f08 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.TextConsoleSimulator
@@ -228,5 +230,4 @@ af7666733efcc974926d7d470e1732a6 Assembly-CSharp.dll:TMPro.Examples.SkewTextExam
 fa248c390b361a9762a964783efcbfb4 Assembly-CSharp.dll:.PlayerSelect
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CameraController
-dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.PlayerController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuPause
