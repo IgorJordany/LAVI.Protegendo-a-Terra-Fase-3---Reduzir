@@ -289,12 +289,6 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Kiev/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="ChannelPurchase">
-      <HintPath>C:/Users/Kiev/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.xiaomi@1.0.0/UnityChannel/ChannelPurchase.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityStore">
-      <HintPath>C:/Users/Kiev/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.xiaomi@1.0.0/UnityChannel/UnityStore.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Protegendo a Terra Fase 3 - Reduzir.csproj">
@@ -303,10 +297,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\Editor\AppStoreModel.cs" />
-    <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\Editor\AppStoreOnboardApi.cs" />
-    <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\Editor\AppStoreSettingsEditor.cs" />
-    <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\Editor\XiaomiPackageNameExtension.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\CustomInspectors\Controllers\Base\AxesBasedControllerEditor.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\CustomInspectors\Controllers\Base\ControllerBaseEditor.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\CustomInspectors\Controllers\TCKButtonEditor.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\CustomInspectors\Controllers\TCKJoystickEditor.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\CustomInspectors\Controllers\TCKTouchpadEditor.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Extensions\SerializedPropertyExtensions.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Initialize\TCKInitialize.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Utils\TCKEditorChangeCheck.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Utils\TCKEditorHelper.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Utils\TCKEditorLayout.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Utils\TCKEditorStyle.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Utils\TCKPrefabCreator.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Windows\Tabs\TCKAboutTab.cs" />
+    <Compile Include="Assets\VictorsAssets\TouchControlsKit-Lite\Scripts\Editor\Windows\TCKWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -329,6 +333,8 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\VictorsAssets\TouchControlsKit-Lite\Content\FirstPersonExample\ReadMeToo.txt" />
+    <None Include="Assets\VictorsAssets\TouchControlsKit-Lite\TCK_Changelog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
