@@ -9,6 +9,7 @@ public class CharacterSelection : MonoBehaviour
 {
     private GameObject[] characterList;
     private int selecaoAtual;
+    private GameObject ativo;
 
     private void Start()
     {
@@ -77,8 +78,8 @@ public class CharacterSelection : MonoBehaviour
     public void PlayerSelect()
     {
         GameObject.FindGameObjectsWithTag("ativo");
-        DontDestroyOnLoad(transform.gameObject);
         characterList[selecaoAtual].gameObject.name = "player";
+        DontDestroyOnLoad(transform.gameObject);
         SceneManager.LoadScene("Game");
     }
 }

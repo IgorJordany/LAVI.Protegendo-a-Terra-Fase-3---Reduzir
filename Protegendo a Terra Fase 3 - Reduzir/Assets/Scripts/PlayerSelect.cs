@@ -16,7 +16,7 @@ public class PlayerSelect : MonoBehaviour {
         //selecao do personagem
         if (GUI.Button(new Rect(Screen.width / 2 - Screen.width / 4, Screen.height / 2 - Screen.height / 2.2f, Screen.width / 2, Screen.height / 1.2f), ""))
         {
-            DATA.PersonagemAInstanciar = SelecaoAtual;
+            //DATA.PersonagemAInstanciar = SelecaoAtual;
             SceneManager.LoadScene("Game"); //mudar cena
         }
             if (SelecaoAtual == 0)

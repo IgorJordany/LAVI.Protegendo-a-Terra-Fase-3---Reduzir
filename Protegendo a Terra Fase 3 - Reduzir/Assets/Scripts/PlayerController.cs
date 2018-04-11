@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,10 +16,11 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         joystick = FindObjectOfType<Joystick>();
-        rb.velocity = new Vector3(joystick.Horizontal * 100f, rb.velocity.y, joystick.Vertical * 100f);
+        //rb.velocity = new Vector3(- (joystick.Horizontal * 20f), 0, -(joystick.Vertical * 20f));
+        rb.transform.Translate(joystick.Horizontal, 0, joystick.Vertical);
         /*
         float Horizontal = Input.GetAxis("Horizontal") * VelocidadeDeMovimento * Time.deltaTime;
         transform.Translate(Horizontal, 0, 0);

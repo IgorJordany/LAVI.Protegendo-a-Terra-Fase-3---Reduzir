@@ -305,6 +305,90 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 591562090}
+--- !u!1 &642623484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 642623485}
+  - component: {fileID: 642623488}
+  - component: {fileID: 642623487}
+  - component: {fileID: 642623486}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &642623485
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642623484}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.11444445, y: 0.5455556, z: 2.3422225}
+  m_LocalScale: {x: 0.16382818, y: 1.0567957, z: 4.953393}
+  m_Children: []
+  m_Father: {fileID: 680660196}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &642623486
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642623484}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 35bf280f85b0bfa499d99e89e755fc59, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &642623487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642623484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &642623488
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642623484}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &649452173
 Prefab:
   m_ObjectHideFlags: 0
@@ -3195,6 +3279,10 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300062, guid: 42f93a6ed26f2a54fbcaccf532c58fb6, type: 3}
+--- !u!4 &680660196 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400060, guid: 42f93a6ed26f2a54fbcaccf532c58fb6, type: 3}
+  m_PrefabInternal: {fileID: 680660131}
 --- !u!1 &759882454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,13 +3653,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939102171}
-  m_LocalRotation: {x: 0.15747975, y: 0.8420268, z: -0.34877893, w: 0.38018975}
-  m_LocalPosition: {x: -32.2, y: 55.9, z: 29.8}
+  m_LocalRotation: {x: 0.15381876, y: 0.8459619, z: -0.3504089, w: 0.3713513}
+  m_LocalPosition: {x: -65.6, y: 98.68, z: 66.3}
   m_LocalScale: {x: 0.64928937, y: 0.64928937, z: 0.64928937}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 45.000004, y: 131.4, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 132.6, z: 0}
 --- !u!114 &1939102176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,29 +3671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f0e07aefca0cc459134ff9df622278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 0}
-  dummyTarget: {fileID: 0}
-  CameraTarget: {fileID: 0}
-  FollowDistance: 30
-  MaxFollowDistance: 100
-  MinFollowDistance: 2
-  ElevationAngle: 30
-  MaxElevationAngle: 85
-  MinElevationAngle: 0
-  OrbitalAngle: 0
-  CameraMode: 0
-  MovementSmoothing: 1
-  RotationSmoothing: 0
-  previousSmoothing: 0
-  MovementSmoothingValue: 25
-  RotationSmoothingValue: 5
-  MoveSensitivity: 2
-  currentVelocity: {x: 0, y: 0, z: 0}
-  desiredPosition: {x: 0, y: 0, z: 0}
-  mouseX: 0
-  mouseY: 0
-  moveVector: {x: 0, y: 0, z: 0}
-  mouseWheel: 0
 --- !u!114 &1939102177
 MonoBehaviour:
   m_ObjectHideFlags: 0
