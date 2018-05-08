@@ -44,7 +44,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1036070622525670
 GameObject:
   m_ObjectHideFlags: 1
@@ -2888,7 +2888,7 @@ Animator:
   m_GameObject: {fileID: 1016309629658732}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6f017fb0e64b690489862f8e85c89db0, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1450752a9300b6d4791b6afdff0eb184, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2907,6 +2907,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c11beb72715124ca88b5607eb997f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  rb: {fileID: 0}
+  ControladorDeAnimacao: {fileID: 0}
 --- !u!136 &136228067240012672
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2917,9 +2920,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7
-  m_Height: 2.98
+  m_Height: 3.1
   m_Direction: 1
-  m_Center: {x: -0.27, y: 1.5, z: -0.66}
+  m_Center: {x: -0.26, y: 1.53, z: -0.66}
 --- !u!137 &137763797775432182
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
