@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
-{
-
+{    
     //private float VelocidadeDeMovimento = 10;
     public Joystick joystick;
     public Rigidbody rb;
@@ -16,10 +15,13 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         ControladorDeAnimacao = GetComponent<Animator>();
     }
-
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+    }
     // Update is called once per frame
     private void Update()
-    {
+    {   
         joystick = FindObjectOfType<Joystick>();
         //rb.velocity = new Vector3(- (joystick.Horizontal * 20f), 0, -(joystick.Vertical * 20f));
         rb.transform.Translate(joystick.Horizontal, 0, joystick.Vertical);
