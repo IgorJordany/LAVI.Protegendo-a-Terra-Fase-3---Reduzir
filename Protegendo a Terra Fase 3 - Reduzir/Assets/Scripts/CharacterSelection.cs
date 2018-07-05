@@ -10,6 +10,7 @@ public class CharacterSelection : MonoBehaviour
     private GameObject[] characterList;
     private int selecaoAtual;
     private GameObject ativo;
+    public GameObject personagem;
 
     private void Start()
     {

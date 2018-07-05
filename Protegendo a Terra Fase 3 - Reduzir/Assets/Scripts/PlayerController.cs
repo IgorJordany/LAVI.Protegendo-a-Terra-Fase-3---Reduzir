@@ -15,15 +15,15 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         ControladorDeAnimacao = GetComponent<Animator>();
     }
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
-    }
+    }*/
     // Update is called once per frame
     private void Update()
     {   
         joystick = FindObjectOfType<Joystick>();
-        //rb.velocity = new Vector3(- (joystick.Horizontal * 20f), 0, -(joystick.Vertical * 20f));
+        rb.velocity = new Vector3(- (joystick.Horizontal * 20f), 0, -(joystick.Vertical * 20f));
         rb.transform.Translate(joystick.Horizontal, 0, joystick.Vertical);
         IniciaAnimacao(joystick.Horizontal, joystick.Vertical);
         /*

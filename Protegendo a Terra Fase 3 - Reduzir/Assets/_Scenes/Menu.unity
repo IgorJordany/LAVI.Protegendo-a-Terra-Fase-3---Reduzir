@@ -1282,6 +1282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2f2f6b593fb754db7c2d5c355da6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personagem: {fileID: 1711660046136172, guid: 96e7862f2ff21884db76feac764c4847, type: 2}
 --- !u!1001 &512799487
 Prefab:
   m_ObjectHideFlags: 0
@@ -2088,6 +2089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2f2f6b593fb754db7c2d5c355da6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personagem: {fileID: 0}
 --- !u!4 &816671476
 Transform:
   m_ObjectHideFlags: 0
