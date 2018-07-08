@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour {
     // Use this for initialization
-    private float distance = 8;
+    private float distance = 4;
     public GameObject panelBox;
-    public GameObject luz;
-    public GameObject Player;
     public Button botao;
-
+    public GameObject luz;
+    private GameObject Player;
+    
 	void Start () {
         panelBox.SetActive(false);
         Player = GameObject.FindWithTag("ativo");
